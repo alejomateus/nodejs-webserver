@@ -6,7 +6,7 @@ http.createServer((req, res)=>{
         years: 23,
         url: req.url
     }
-    res.write(output);
+    res.write(JSON.stringify(output));
     // res.write('Hello World');
     res.end();
 })
